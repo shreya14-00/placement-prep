@@ -1,0 +1,259 @@
+/* Custom CSS - EXACT COLOR PALETTE */
+
+/* Color Variables */
+:root {
+    --page-bg: #111827;
+    --sidebar: #1F2937;
+    --card: #1F2937;
+    --card-border: #334155;
+    --heading: #F9FAFB;
+    --text: #CBD5E1;
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --selected-card: #1E3A5F;
+    --selected-border: #3B82F6;
+    --highlight: #14B8A6;
+    --success: #22C55E;
+    --error: #EF4444;
+}
+
+/* Main background */
+.stApp {
+    background: var(--page-bg);
+    min-height: 100vh;
+}
+
+/* Title styling */
+h1 {
+    color: var(--heading);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--heading);
+}
+
+/* Card styling */
+.css-1r6slb0 {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 2px solid var(--card-border);
+}
+
+/* Buttons */
+.stButton > button {
+    background: var(--primary);
+    color: var(--heading);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(37,99,235,0.4);
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37,99,235,0.6);
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background: var(--sidebar);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid var(--card-border);
+}
+
+/* Metrics */
+.stMetric {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(37,99,235,0.2);
+    border: 1px solid var(--card-border);
+}
+
+/* Success box */
+.stSuccess {
+    background: linear-gradient(45deg, #064e3b, #047857);
+    color: var(--success);
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid var(--success);
+}
+
+/* Info box */
+.stInfo {
+    background: linear-gradient(45deg, #1e3a8a, #2563eb);
+    color: var(--primary);
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+}
+
+/* Warning box */
+.stWarning {
+    background: linear-gradient(45deg, #7c2d12, #c2410c);
+    color: #f97316;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid #f97316;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--heading);
+    border: 1px solid var(--card-border);
+}
+
+/* Radio buttons */
+.stRadio > div {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(37,99,235,0.2);
+    border: 2px solid var(--card-border);
+}
+
+/* Selectbox */
+.stSelectbox > div {
+    background: var(--card);
+    border-radius: 10px;
+    border: 2px solid var(--card-border);
+    color: var(--text);
+}
+
+/* Slider - Teal color (NOT RED) */
+.stSlider > div {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid var(--card-border);
+}
+
+/* Slider track */
+.stSlider .st-emotion-cache-1v1vkwf {
+    background: var(--highlight) !important;
+}
+
+/* Slider thumb (handle) */
+.stSlider .st-emotion-cache-1h2x59k {
+    background: var(--highlight) !important;
+    border: 3px solid var(--heading) !important;
+}
+
+/* Slider value text */
+.stSlider label {
+    color: var(--heading) !important;
+}
+
+/* Progress bar */
+.stProgress > div {
+    background: linear-gradient(90deg, var(--primary), var(--highlight));
+    border-radius: 50px;
+}
+
+/* Divider */
+hr {
+    border: 2px solid var(--card-border);
+    border-radius: 10px;
+}
+
+/* Markdown */
+.markdown {
+    color: var(--text);
+}
+
+/* Container */
+.css-1lcbmhc {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--card-border);
+}
+
+/* Info boxes text */
+div[data-testid="stInfo"] p, 
+div[data-testid="stSuccess"] p, 
+div[data-testid="stWarning"] p {
+    color: var(--heading) !important;
+    font-weight: bold;
+}
+
+/* List items in info boxes */
+div[data-testid="stInfo"] ul li,
+div[data-testid="stSuccess"] ul li,
+div[data-testid="stWarning"] ul li {
+    color: var(--heading) !important;
+}
+
+/* Bold text */
+strong, b {
+    color: var(--highlight);
+}
+
+/* HTML divs with white background - FOOTER SECTION */
+div[style*="background: white"] {
+    background: var(--card) !important;
+    color: var(--text) !important;
+    border: 2px solid var(--card-border);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* HTML divs headings - FOOTER */
+div[style*="background: white"] h2,
+div[style*="background: white"] h3 {
+    color: var(--heading) !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* HTML paragraph - FOOTER */
+div[style*="background: white"] p {
+    color: var(--text) !important;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* HTML list items - FOOTER */
+div[style*="background: white"] ul li {
+    color: var(--text) !important;
+}
+
+/* HTML bold - FOOTER */
+div[style*="background: white"] b,
+div[style*="background: white"] strong {
+    color: var(--highlight) !important;
+}
+
+/* HTML line breaks - FOOTER */
+div[style*="background: white"] br {
+    color: var(--text) !important;
+}
+
+/* Selected/Radio checked items */
+.stRadio [role="radio"]:checked {
+    background-color: var(--selected-card);
+    border-color: var(--selected-border);
+}
+
+/* Small highlights */
+span, .small-highlight {
+    color: var(--highlight);
+}
